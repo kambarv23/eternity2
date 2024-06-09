@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternity Service Management System</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="static/logo.jpg" alt="Eternity Logo">
+        </div>
+        <div class="title">
+            <h1>Eternity Service Management System</h1>
+        </div>
+    </header>
+
+    <div id="container">
+        <form id="eternity-form">
+            <div>
+                <label>Eternity DC No:</label>
+                <input type="text" id="eternity-dc-no" placeholder="Eternity DC number" readonly>
+            </div>
+            <br>
+            <div>
+                <label>DC Date:</label>
+                <input type="date" placeholder="DC date">
+            </div>
+            <br>
+            <!-- Other form fields... -->
+            <div>
+                <label>Device Model Number:</label>
+                <input type="text" placeholder="Device Model Number">
+            </div>
+            <br>
+            <div>
+                <label>Device Serial Number:</label>
+                <input type="text" placeholder="Device Serial Number">
+            </div>
+            <br>
+            
+            <div>
+                <label>Company Name:</label>
+                <input type="text" placeholder="Company Name">
+            </div>
+            <br>
+            
+            <div>
+                <label>Email ID:</label>
+                <input type="email" placeholder="Email ID">
+            </div>
+            <br>
+            
+            <div>
+                <label>Phone Number Primary:</label>
+                <input type="text" placeholder="Phone Number Primary">
+            </div>
+            <br>
+            
+            <div>
+                <label>Phone Number Secondary:</label>
+                <input type="text" placeholder="Phone Number Secondary">
+            </div>
+            <br>
+            
+            <div>
+                <label>Fault / Issue:</label>
+                <input type="text" placeholder="">
+            </div>
+            <br>
+            
+            <div>
+                <label>Engineer Name (Device Tested):</label>
+                <input type="text" placeholder="Engineer Name (Device Tested):">
+            </div>
+            <br>
+            
+            <div>
+                <label>SR No / RMA Reference No:</label>
+                <input type="text" placeholder="SR No / RMA Reference No:">
+            </div>
+            <br>
+            
+            <div>
+                <label>SR No / RMA Date:</label>
+                <input type="date" placeholder="date">
+            </div>
+            <br>
+            
+            <div>
+                <label>Dispatch to Service centre Date:</label>
+                <input type="date" placeholder="Dispatch to Service centre Date">
+            </div>
+            <br>
+            
+            <label for="mode_of_dispatch">Mode of Dispatch:</label>
+            <select name="mode_of_dispatch" id="mode_of_dispatch">
+                <optgroup label="By Hand (Person's Name)">
+                    <option value="by_hand">By Hand</option>
+                </optgroup>
+                <optgroup label="Courier">
+                    <option value="courier">Courier</option>
+                </optgroup>
+            </select>
+            <br>
+            
+            <!-- By Hand (Person's Name) Fields -->
+            <div id="by_hand_fields" style="display: none;">
+                <label for="person_name">Person's Name:</label>
+                <input type="text" id="person_name" name="person_name">
+                <br>
+            </div>
+            
+            <!-- Courier Fields -->
+            <div id="courier_fields" style="display: none;">
+                <label for="courier_docket">Courier Docket Details:</label>
+                <input type="text" id="courier_docket" name="courier_docket">
+                <br>
+                <label for="courier_name">Courier Name:</label>
+                <input type="text" id="courier_name" name="courier_name">
+                <br>
+            </div>
+            
+            <div>
+                <br>
+                <label for="Warranty_Status">Warranty Status:</label>
+                <select name="Warranty Status" id="Warranty Status">
+                    <option value="Under_Warranty">Under Warranty</option>
+                    <option value="Out_Of_Warranty">Out Of Warranty</option>
+                    <option value="Physical_Damage">Physical Damage</option>
+                    <option value="Burnt_Case">Burnt Case</option>
+                    <option value="Water_Damage">Water Damage</option>
+                    <option value="Exception">Exception</option>
+                </select>
+                <br>
+                
+                <!-- By Hand (Person's Name) Fields -->
+                <div id="by_hand_fields" style="display: none;">
+                    <label for="person_name">Person's Name:</label>
+                    <input type="text" id="person_name" name="person_name">
+                    <br>
+                </div>
+                
+                <!-- Courier Fields -->
+                <div id="courier_fields" style="display: none;">
+                    <label for="courier_docket">Courier Docket Details:</label>
+                    <input type="text" id="courier_docket" name="courier_docket">
+                    <br>
+                    <label for="courier_name">Courier Name:</label>
+                    <input type="text" id="courier_name" name="courier_name">
+                    <br>
+                </div>
+                
+                <div>
+                    <br>
+                    <!-- Other form fields... -->
+                    <div>
+                        <label>Repair / Component charges:</label>
+                        <input type="text" placeholder="Repair / Component charges">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Approved / Denied status:</label>
+                        <input type="text" placeholder="Approved / Denied status">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Arrival From Service centre:</label>
+                        <input type="date" placeholder="Arrival From Service centre">
+                    </div>
+                    <br>
+                    
+                    <div>
+                        <label>Engineer Name (Device Tested Post Service):</label>
+                        <input type="text" placeholder="Engineer Name (Device Tested Post Service)">
+                    </div>
+                    <br>
+                    
+                    <div>
+                        <label>Updated to Customer:Date:</label>
+                        <input type="date" placeholder="Updated to Customer:date">
+                    </div>
+                    <br>
+                    
+                    <div>
+                        <label>Device collected On:</label>
+                        <label>Date</label>
+                        <input type="date" placeholder="Device collected On">
+                        <label>Name</label>
+                        <input type="text" placeholder="Device collected By">
+                    </div>
+                    <br>
+                    
+                    <div>
+                        <label>Remarks:</label>
+                        <input type="text" placeholder="Remarks">
+                    </div>
+                    <br>
+                </div>
+            </div>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Eternity Service Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="static/scripts.js"></script>
+</body>
+</html>
